@@ -40,7 +40,7 @@ We have also implemented `face liveness detection`, `face recognition`, `pose es
   | 6        | [Face Recognition - React-Native](https://github.com/kby-ai/FaceRecognition-React-Native)        | Standard SDK |
   | 7        | [Face Attribute - Android](https://github.com/kby-ai/FaceAttribute-Android)        | Premium SDK |
   | 8        | [Face Attribute - iOS](https://github.com/kby-ai/FaceAttribute-iOS)        | Premium SDK |
-  | ➡️        | <b>[Face Attribute - Flutter](https://github.com/kby-ai/FaceAttribute-iOS)</b>        | Premium SDK |
+  | ➡️        | <b>[Face Attribute - Flutter](https://github.com/kby-ai/FaceAttribute-Flutter)</b>        | Premium SDK |
 
  > To get Face SDK(server), please visit products [here](https://github.com/kby-ai/Product).<br/>
 
@@ -52,29 +52,23 @@ We have also implemented `face liveness detection`, `face recognition`, `pose es
   <img alt="" src="https://user-images.githubusercontent.com/125717930/230804673-17c99e7d-6a21-4a64-8b9e-a465142da148.png" height=80/>
 </a>
 
-### App Store
-
-<a href="https://apps.apple.com/us/app/kby-ai-face-recognition/id6448648922" target="_blank">
-  <img alt="" src="https://user-images.githubusercontent.com/125717930/235276083-d20fe057-214d-497c-a431-4569bbeed2fe.png" height=80/>
-</a>
-
-## Performance Video
-
-You can visit our YouTube video [here](https://www.youtube.com/watch?v=M7t_dpT-hOI) to see how well our demo app works.</br>
-[![Face Recognition Android](https://img.youtube.com/vi/M7t_dpT-hOI/0.jpg)](https://www.youtube.com/watch?v=M7t_dpT-hOI)
-
 ## Screenshots
 <p float="left">
-  <img src="https://github.com/kby-ai/FaceRecognition-Flutter/assets/125717930/724fa0e5-7d32-45f4-9d63-c192e79c15a0" width=200/>
-  <img src="https://github.com/kby-ai/FaceRecognition-Flutter/assets/125717930/ea7f4653-10dc-45d4-a00c-2ae65cfd678b" width=200/>
-  <img src="https://github.com/kby-ai/FaceRecognition-Flutter/assets/125717930/f1b0a0cd-5e5d-4b03-9dae-a1d3839eb8ee" width=200/>
+  <img src="https://github.com/kby-ai/FaceAttribute-Android/assets/125717930/8357b81f-757f-4300-a913-94e5530108b4" width=240/>
+  <img src="https://user-images.githubusercontent.com/125717930/235572299-23989a6e-d6cc-41d3-b75c-a235018ee464.png" width=240/>
+  <img src="https://user-images.githubusercontent.com/125717930/235572304-41714fd2-b117-4bcf-999d-32c6d5c1a0c5.png" width=240/>
 </p>
 
 <p float="left">
-  
-  <img src="https://github.com/kby-ai/FaceRecognition-Flutter/assets/125717930/cd8d4643-cbca-4fc5-b239-574383bbdc88" width=200/>
-  <img src="https://github.com/kby-ai/FaceRecognition-Flutter/assets/125717930/763dd8fa-2463-4534-9497-370b4a9dfd62" width=200/>
-  <img src="https://github.com/kby-ai/FaceRecognition-Flutter/assets/125717930/26f1c3aa-d90a-4935-af8a-bff6741bbefc" width=200/>
+  <img src="https://github.com/kby-ai/FaceAttribute-Android/assets/125717930/0fc2851d-ccb3-4473-9748-83e025eb8409" width=240/>
+  <img src="https://github.com/kby-ai/FaceAttribute-Android/assets/125717930/6ee607b9-dc11-4ac6-8481-27357357b630" width=240/>
+  <img src="https://github.com/kby-ai/FaceAttribute-Android/assets/125717930/75dbda2c-729a-4823-a18f-30301257b84a" width=240/>
+</p>
+
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/125717930/235573436-6944cd3b-3b93-404d-b8c7-c02fc83d4bdc.png" width=240/>
+  <img src="https://github.com/kby-ai/FaceAttribute-Android/assets/125717930/515157bd-39ab-4a94-a54c-b2224d69b9fc" width=240/>
+  <img src="https://github.com/kby-ai/FaceAttribute-Android/assets/125717930/b1f64dba-7b58-4385-939d-949fb4be4d66" width=240/>
 </p>
 
 ## SDK License
