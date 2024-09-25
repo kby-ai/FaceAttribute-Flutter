@@ -11,8 +11,8 @@
 
 # FaceAttribute-Flutter
 ## Overview
-We implemented `face auto-capture` functionality in this repo.</br>
-We have also implemented `face liveness detection`, `face recognition`, `pose estimation`, `face quality calculation`, `face landmark detection`, `face occlusion detection`, `eye closure detection`, `age/gender estimation` with Flutter framework as well.</br>
+This repo performs `face auto-capture` functionality on real-time mobile camera.</br>
+It also supports the following functionalities: `face liveness detection`, `face recognition`, `pose estimation`, `face quality calculation`, `face landmark detection`, `face occlusion detection`, `eye closure detection`, `age/gender estimation`.</br>
 
 > In this repository, we integrated KBY-AI's `face premium SDK` into the Flutter project for both Android and iOS.</br>
 ### ◾FaceSDK(Mobile) Details
@@ -73,8 +73,8 @@ We have also implemented `face liveness detection`, `face recognition`, `pose es
 
 ## SDK License
 
-The face recognition project relies on our SDK, which requires a license for each application ID.</br>
-- The code below shows how to use the license: https://github.com/kby-ai/FaceRecognition-Flutter/blob/0ed0fea9f86d73d08aff81e25da479c62f2ebc05/lib/main.dart#L68-L94
+To run this repo successfully, license should be required based on each `application ID`.</br>
+- The code below shows how to use the license: https://github.com/kby-ai/FaceAttribute-Flutter/blob/d5e05cd5b22bb7d57c55bcc26eb8cb29cff11993/lib/main.dart#L71-L79
 
 - To request a license, please contact us:</br>
 🧙`Email:` contact@kby-ai.com</br>
@@ -86,7 +86,7 @@ The face recognition project relies on our SDK, which requires a license for eac
 ## How To Run
 ### 1. Flutter Setup
   Make sure you have Flutter installed. </br>
-  We have tested the project with Flutter version 3.10.2.</br> 
+  This repo has been built with Flutter version `3.22.3`.</br> 
   If you don't have Flutter installed, please follow the instructions provided in the official Flutter documentation [here](https://docs.flutter.dev/get-started/install).</br>
 ### 2. Running the App
   Run the following commands:
@@ -141,8 +141,13 @@ The face recognition project relies on our SDK, which requires a license for eac
   ```
   - Set parameters using the `setParam` method:
   ```dart
-  await _facesdkPlugin
-          .setParam({'check_liveness_level': livenessLevel ?? 0})
+  await _facesdkPlugin.setParam({
+        'check_liveness_level': livenessLevel ?? 0,
+        'check_eye_closeness': true,
+        'check_face_occlusion': true,
+        'check_mouth_opened': true,
+        'estimate_age_gender': true
+      });
   ```
   - Extract faces using the `extractFaces` method:
   ```dart
