@@ -116,6 +116,7 @@ To run this repo successfully, license should be required based on each `applica
   - Import the `facesdk_plugin` package.
   ```dart
     import 'package:facesdk_plugin/facesdk_plugin.dart';
+    import 'package:facesdk_plugin/facedetection_interface.dart';
   ```
 ### 2 API Usages
 #### 2.1 Facesdk Plugin
