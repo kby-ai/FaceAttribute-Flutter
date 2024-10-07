@@ -165,4 +165,3 @@ To run this repo successfully, license should be required based on each `applica
   
   This file contains the necessary code for implementing the camera screen and performing face detection.
   
-[![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fkby-ai%2FFaceAttribute-Flutter&countColor=%23263759)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fkby-ai%2FFaceAttribute-Flutter)
