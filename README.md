@@ -99,16 +99,16 @@ To run this repo successfully, license should be required based on each `applica
   If you plan to run the iOS app, please refer to the following [link](https://docs.flutter.dev/deployment/ios) for detailed instructions.</br>
 ## About SDK
 ### 1. Setup
-### 1.1 Setting Up Face SDK
+#### 1.1 Setting Up Face SDK
   > Android
 
-  -  Copy the SDK (folder `libfacesdk`) to the folder `android` in your project.</br>
-  -  Add SDK to the project in `settings.gradle`.
+  - Copy the SDK (folder `libfacesdk`) to the folder `android` in your project.</br>
+  - Add SDK to the project in `settings.gradle`.
   ```dart
   include ':libfacesdk'
   ```
 #### 1.2 Setting Up Face SDK Plugin
-  -  Copy the folder `facesdk_plugin` to the root folder of your project.</br>
+  - Copy the folder `facesdk_plugin` to the `root` folder of your project.</br>
   - Add the dependency in your `pubspec.yaml` file.
   ```dart
     facesdk_plugin:
