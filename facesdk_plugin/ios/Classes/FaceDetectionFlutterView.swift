@@ -113,7 +113,13 @@ class FaceDetectionFlutterView : NSObject, FlutterPlatformView, AVCaptureVideoDa
             capturedImage = capturedImage.flipHorizontally()
         }
         
-        let faceBoxes = FaceSDK.faceDetection(capturedImage)
+        let param = FaceDetectionParam()
+        param.check_liveness = true
+          param.check_eye_closeness = true
+          param.check_mouth_opened = true
+          param.check_face_occlusion = true
+        let faceBoxes = FaceSDK.faceDetection(capturedImage, param: param)
+
         var faceBoxesMap = NSMutableArray()
         for face in (faceBoxes as NSArray as! [FaceBox]) {
             let templates = FaceSDK.templateExtraction(capturedImage, faceBox: face)
@@ -129,6 +135,15 @@ class FaceDetectionFlutterView : NSObject, FlutterPlatformView, AVCaptureVideoDa
             faceDic["yaw"] = face.yaw
             faceDic["roll"] = face.roll
             faceDic["pitch"] = face.pitch
+            faceDic["age"] = face.age
+            faceDic["gender"] = face.gender
+            faceDic["face_luminance"] = face.face_luminance
+            faceDic["mouth_opened"] = face.face_mouth_opened
+            faceDic["left_eye_closed"] = face.left_eye
+            faceDic["right_eye_closed"] = face.right_eye
+            faceDic["face_occlusion"] = face.face_occlusion
+            faceDic["face_quality"] = face.face_quality
+            faceDic["landmarks_68"] = face.landmark
             faceDic["templates"] = templates
             faceDic["faceJpg"] = faceJpg
             faceDic["frameWidth"] = Int(capturedImage.size.width)
