@@ -43,6 +43,19 @@ const double DEFAULT_OCCLUSION_THRESHOLD = 0.5;
 const double DEFAULT_EYECLOSE_THRESHOLD = 0.5;
 const double DEFAULT_MOUTHOPEN_THRESHOLD = 0.5;
 
+Float32List byteArrayToFloatArray(Uint8List byteArray) {
+   // Create a Float32List with half the length of the byteArray
+   Float32List floatArray = Float32List(byteArray.length ~/ Float32List.bytesPerElement);
+
+   // Iterate over the byteArray and convert each pair of bytes to a float value
+   for (int i = 0; i < byteArray.length; i += Float32List.bytesPerElement) {
+     // Convert bytes to a 32-bit floating point value
+     floatArray[i ~/ Float32List.bytesPerElement] = byteArray.buffer.asFloat32List()[i ~/ Float32List.bytesPerElement];
+   }
+
+   return floatArray;
+}
+
 Rect getROIRect(Size frameSize) {
   double margin = frameSize.width / 6;
   double rectHeight = (frameSize.width - 2 * margin) * 6 / 5;
@@ -315,16 +328,37 @@ class FaceCaptureViewState extends State<FaceCaptureView> {
     double faceRight = 0.0;
     double faceBottom = 0.0;
 
-    List landmarks_68 = face['landmarks_68'];
+    try {
+      if (Platform.isAndroid) {
+        List landmarks_68 = face['landmarks_68'];
+    
+        for (int i = 0; i < 68; i++) {
+          faceLeft =
+              faceLeft < landmarks_68[i * 2] ? faceLeft : landmarks_68[i * 2];
+          faceRight =
+              faceRight > landmarks_68[i * 2] ? faceRight : landmarks_68[i * 2];
+          faceBottom = faceBottom > landmarks_68[i * 2 + 1]
+              ? faceBottom
+              : landmarks_68[i * 2 + 1];
+        }
+      } else {
+        List landmarks_68 = byteArrayToFloatArray(Uint8List.fromList(face['landmarks_68']));
+    
+        for (int i = 0; i < 68; i++) {
+          faceLeft =
+              faceLeft < landmarks_68[i * 2] ? faceLeft : landmarks_68[i * 2];
+          faceRight =
+              faceRight > landmarks_68[i * 2] ? faceRight : landmarks_68[i * 2];
+          faceBottom = faceBottom > landmarks_68[i * 2 + 1]
+              ? faceBottom
+              : landmarks_68[i * 2 + 1];      
+        }
+      }
 
-    for (int i = 0; i < 68; i++) {
-      faceLeft =
-          faceLeft < landmarks_68[i * 2] ? faceLeft : landmarks_68[i * 2];
-      faceRight =
-          faceRight > landmarks_68[i * 2] ? faceRight : landmarks_68[i * 2];
-      faceBottom = faceBottom > landmarks_68[i * 2 + 1]
-          ? faceBottom
-          : landmarks_68[i * 2 + 1];
+    } catch (e) {}
+    
+    if() {
+    } else {
     }
 
     const double sizeRate = 0.30;
