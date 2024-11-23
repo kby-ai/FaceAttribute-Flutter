@@ -356,10 +356,6 @@ class FaceCaptureViewState extends State<FaceCaptureView> {
       }
 
     } catch (e) {}
-    
-    if() {
-    } else {
-    }
 
     const double sizeRate = 0.30;
     const double interRate = 0.03;

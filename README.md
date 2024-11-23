@@ -87,7 +87,7 @@ To run this repo successfully, license should be required based on each `applica
 ## How To Run
 ### 1. Flutter Setup
   Make sure you have Flutter installed. </br>
-  This repo has been built with Flutter version `3.22.3`.</br> 
+  This repo has been built with Flutter version `3.24.5`.</br> 
   If you don't have Flutter installed, please follow the instructions provided in the official Flutter documentation [here](https://docs.flutter.dev/get-started/install).</br>
 ### 2. Running the App
   Run the following commands:
