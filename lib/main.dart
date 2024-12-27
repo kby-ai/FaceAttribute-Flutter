@@ -71,11 +71,11 @@ class MyHomePageState extends State<MyHomePage> {
       if (Platform.isAndroid) {
         await _facesdkPlugin
             .setActivation(
-                "uv4FFhzjRNjCS5HdY4JmdTB3Rxp15p1spg5Q+DWy+kjZk5ExrLyzBIzwPcwNfYPFAnTlQkq395oT"
-                "3S6/WBAGP4keZbA+XZ5PRUn+43DG+y9aQKOU03RM2/bg6SdN1bRLW0Jfc56CCH0c6+7xqCoDRauH"
-                "iPIJsFMjJQdjA64MM9uZDj1hdDOF5nCHj/9Lq8Or56inZY5POs5qo9Y4kJuIfIVTCbzLMQHwSo9B"
-                "urvnJFUT9jtsIhbseAhZPrHfZGVCehCyYE9HSkXLok+omARw+VUnmBeDwbS+HBy4/7DqCotK5MMK"
-                "QOp4XocTLg6Vx0PYOwMF4Wdw9LCjknYhRp3/Og==")
+                "jmmEAcBHenipyeBgRVbnncSD905Yqv5ooWGF6OIBaJVbHveX9cxtLFSOFK6lM0530bHYEKeq4lax"
+                "AotSJ08XN19t9YgBlAK3DX556BhAdjLK0cNrqp4xgV0szHh8UL1TbGGoIRQsq7cRDJHH/oqVLh1+"
+                "Lo64nz7HMPqicL0YgEPlIfcOm+SAhj6hPXsav0F87V88YyWDlmlaw07PROXkjI2YlHhyfQ+ANXhx"
+                "3aAqVfDi+SO0xwa9W405IfQ0t7hThWc/MxilEgr2+LNEOM/NnWmUOvbVKsK9RokUWyY2bDJjiJ9B"
+                "GmhjIqDnNTbHTONh6ZNcWpZBbYt3jmSWXls7Mg==")
             .then((value) => facepluginState = value ?? -1);
       } else {
         await _facesdkPlugin
