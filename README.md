@@ -57,6 +57,11 @@ It also supports the following functionalities: `face liveness detection`, `face
   <img alt="" src="https://user-images.githubusercontent.com/125717930/230804673-17c99e7d-6a21-4a64-8b9e-a465142da148.png" height=80/>
 </a>
 
+## Performance Video
+
+You can visit our YouTube video [here](https://www.youtube.com/watch?v=-WiAethTacc) to see how well our demo app works.</br></br>
+[![Face Recognition Android](https://img.youtube.com/vi/-WiAethTacc/0.jpg)](https://www.youtube.com/watch?v=-WiAethTacc)
+
 ## Screenshots
 <p float="left">
   <img src="https://github.com/kby-ai/FaceAttribute-Android/assets/125717930/8357b81f-757f-4300-a913-94e5530108b4" width=240/>
