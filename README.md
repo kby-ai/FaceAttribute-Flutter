@@ -104,7 +104,8 @@ To run this repo successfully, license should be required based on each `applica
   Run the following commands:
   
   ```bash
-  flutter pub upgrade
+  flutter clean
+  flutter pub get
   flutter run
   ```  
   If you plan to run the iOS app, please refer to the following [link](https://docs.flutter.dev/deployment/ios) for detailed instructions.</br>
