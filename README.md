@@ -114,12 +114,20 @@ To run this repo successfully, license should be required based on each `applica
 #### 1.1 Setting Up Face SDK
   > Android
 
-  - Copy the SDK (folder `libfacesdk`) to the folder `android` in your project.</br>
-  - Add SDK to the project in `settings.gradle`.
+  - Copy the `Face SDK` library (folder `libfacesdk`) to the folder `android` in your project.</br>
+  - Add `Face SDK` library to the project in `settings.gradle`.
   ```dart
   include ':libfacesdk'
   ```
-#### 1.2 Setting Up Face SDK Plugin
+### 1.2 Setting Up Fotoapparat library
+  > Android
+
+  - Copy `Fotoapparat` library (folder `libfotoapparat`) to the folder `android` in your project.</br>
+  - Add  `Fotoapparat` library to the project in `settings.gradle` in the folder `android` in your project.
+  ```dart
+  include ':libfotoapparat'
+  ```  
+#### 1.3 Setting Up Face SDK Plugin
   - Copy the folder `facesdk_plugin` to the `root` folder of your project.</br>
   - Add the dependency in your `pubspec.yaml` file.
   ```dart
