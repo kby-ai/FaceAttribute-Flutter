@@ -97,9 +97,9 @@ To run this repo successfully, license should be required based on each `applica
 
 ## How To Run
 ### 1. Flutter Setup
-  Make sure you have Flutter installed. </br>
-  This repo has been built with Flutter version `3.29.2`.</br> 
-  If you don't have Flutter installed, please follow the instructions provided in the official Flutter documentation [here](https://docs.flutter.dev/get-started/install).</br>
+  Make sure you have `Flutter` installed. </br>
+  This repo has been built with `Flutter` version `3.29.2`.</br> 
+  If you don't have `Flutter` installed, please follow the instructions provided in the official `Flutter` documentation [here](https://docs.flutter.dev/get-started/install).</br>
 ### 2. Running the App
   Run the following commands:
   
@@ -108,7 +108,10 @@ To run this repo successfully, license should be required based on each `applica
   flutter pub get
   flutter run
   ```  
-  If you plan to run the iOS app, please refer to the following [link](https://docs.flutter.dev/deployment/ios) for detailed instructions.</br>
+  If you plan to run the `iOS` app, please refer to the following [link](https://docs.flutter.dev/deployment/ios) for detailed instructions.</br>
+### 3. Building the APK for Release
+  To create a release `APK`, configure `ProGuard` as described in this file:https://github.com/kby-ai/FaceRecognition-Flutter/blob/76f1982ed301e219d864f22b584e9e34222464ea/android/app/proguard-rules.pro#L22-L22 
+
 ## About SDK
 ### 1. Setup
 #### 1.1 Setting Up Face SDK
