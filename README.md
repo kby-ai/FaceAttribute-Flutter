@@ -110,7 +110,7 @@ To run this repo successfully, license should be required based on each `applica
   ```  
   If you plan to run the `iOS` app, please refer to the following [link](https://docs.flutter.dev/deployment/ios) for detailed instructions.</br>
 ### 3. Building the APK for Release
-  To create a release `APK`, configure `ProGuard` as described in this file:https://github.com/kby-ai/FaceRecognition-Flutter/blob/76f1982ed301e219d864f22b584e9e34222464ea/android/app/proguard-rules.pro#L22-L22 
+  To create a release `APK`, configure `ProGuard` as described in this file:https://github.com/kby-ai/FaceAttribute-Flutter/blob/49124175e3e59b495a4a941f2088c6ab8cd48d6d/android/app/proguard-rules.pro#L22-L22 
 
 ## About SDK
 ### 1. Setup
